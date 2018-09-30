@@ -6,8 +6,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False"
-             ControlTemplate="{StaticResource MyPageTemplate}"
-             >
+             ControlTemplate="{StaticResource MyPageTemplate}">
 
     <ContentPage.Content>
         <Label Text="{Binding MyContent}"/>
