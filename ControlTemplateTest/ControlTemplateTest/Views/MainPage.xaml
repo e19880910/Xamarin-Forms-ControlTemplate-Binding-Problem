@@ -2,10 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ControlTemplateTest.Views.MainPage"
-             Title="{Binding Title}">
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
+             ControlTemplate="{StaticResource MyPageTemplate}"
+             >
 
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Label Text="Welcome to Xamarin Forms and Prism!" />
-    </StackLayout>
-
+    <ContentPage.Content>
+        <Label Text="{Binding MyContent}"/>
+    </ContentPage.Content>
+    
 </ContentPage>

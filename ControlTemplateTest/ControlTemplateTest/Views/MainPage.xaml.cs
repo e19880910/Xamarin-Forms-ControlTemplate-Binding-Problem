@@ -13,5 +13,6 @@ namespace ControlTemplateTest.Views
         {
             InitializeComponent();
         }
+        
     }
 }
